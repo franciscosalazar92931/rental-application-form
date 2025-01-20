@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rental Application</title>
+</head>
+<body>
+    <h1>Rental Application</h1>
+
+    <!-- Configure Form to use Formspree for submission -->
+    <form action="https://formspree.io/f/your-unique-id" method="post" enctype="multipart/form-data">
+        <fieldset>
+            <legend>Applicant Information</legend>
+            <label for="full-name">Full Name:</label>
+            <input type="text" id="full-name" name="full-name" required><br><br>
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required><br><br>
+
+            <label for="ssn">Social Security Number (SSN):</label>
+            <input type="text" id="ssn" name="ssn" required><br><br>
+
+            <label for="id-number">Driver's License/ID Number:</label>
+            <input type="text" id="id-number" name="id-number" required><br><br>
+
+            <label for="state-issued">State Issued:</label>
+            <input type="text" id="state-issued" name="state-issued" required><br><br>
+
+            <label for="expiration">Expiration Date:</label>
+            <input type="date" id="expiration" name="expiration" required><br><br>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required><br><br>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+        </fieldset>
+
+        <fieldset>
+            <legend>Residential History</legend>
+            <h3>Current Address</h3>
+            <label for="current-address">Address:</label>
+            <input type="text" id="current-address" name="current-address" required><br><br>
+
+            <label for="current-city">City:</label>
+            <input type="text" id="current-city" name="current-city" required><br><br>
+
+            <label for="current-state">State:</label>
+            <input type="text" id="current-state" name="current-state" required><br><br>
+
+            <label for="current-zip">ZIP:</label>
+            <input type="text" id="current-zip" name="current-zip" required><br><br>
+
+            <label for="current-rent">Monthly Rent:</label>
+            <input type="number" id="current-rent" name="current-rent" required><br><br>
+
+            <label for="current-landlord">Landlord Name:</label>
+            <input type="text" id="current-landlord" name="current-landlord" required><br><br>
+
+            <label for="current-landlord-phone">Landlord Phone:</label>
+            <input type="tel" id="current-landlord-phone" name="current-landlord-phone" required><br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Employment Information</legend>
+            <h3>Current Employer</h3>
+            <label for="employer-name">Employer Name:</label>
+            <input type="text" id="employer-name" name="employer-name" required><br><br>
+
+            <label for="employer-address">Employer Address:</label>
+            <input type="text" id="employer-address" name="employer-address" required><br><br>
+
+            <label for="position">Position:</label>
+            <input type="text" id="position" name="position" required><br><br>
+
+            <label for="monthly-income">Monthly Income:</label>
+            <input type="number" id="monthly-income" name="monthly-income" required>
+        </fieldset>
+
+        <fieldset>
+            <legend>Required Attachments</legend>
+            <label for="proof-identity">Proof of Identity:</label>
+            <input type="file" id="proof-identity" name="proof-identity" accept="image/*,.pdf" required><br><br>
+
+            <label for="proof-income">Proof of Income:</label>
+            <input type="file" id="proof-income" name="proof-income" accept="image/*,.pdf" required>
+        </fieldset>
+
+        <button type="submit">Submit Application</button>
+    </form>
+</body>
+</html>
